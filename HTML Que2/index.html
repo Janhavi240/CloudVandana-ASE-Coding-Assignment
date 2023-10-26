@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="container">
+            <h2 style="text-align: center; font-size: 35px;">Survey Form</h2>
+            <form id="survey-form">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" required>
+        
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" required>
+        
+                <label for="date-of-birth">Date of Birth</label>
+                <input type="date" id="date-of-birth" required>
+        
+                <label for="country">Country</label>
+                <select id="country" required>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="India">India</option>
+
+                    <!-- Add more countries as needed -->
+                </select>
+
+                <label class="gender-label">Gender</label>
+                <label for="male">Male</label>
+                <input type="checkbox" id="male">
+                <label for="female">Female</label>
+                <input type="checkbox" id="female">
+                <label for="other">Other</label>
+                <input type="checkbox" id="other">
+        
+                <label for="profession">Profession</label>
+                <input type="text" id="profession" required>
+        
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+        
+                <label for="mobile-number">Mobile Number</label>
+                <input type="tel" id="mobile-number" required>
+        <br><br>
+                <div class="button-container">
+                    <button type="submit">Submit</button>
+                    <button type="button" class="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Popup to display submitted values -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <h2>Submitted Values</h2>
+                <div id="submitted-values"></div>
+                <button id="close-popup">Close</button>
+            </div>
+      </div>   
+      
+      <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
